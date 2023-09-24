@@ -13,7 +13,7 @@ function calculateAge() {
     const age = getAge(birthdayValue);
     // console.log(age);
 
-    resultEl.innerText = `Your age is ${age} ${
+    resultEl.innerText = `You are ${age} ${
       age > 1 ? "years" : "year"
     } old.`;
   }
