@@ -1,0 +1,36 @@
+//* index.html
+Simple web page skeleton:
+1) Emmet meta data + meta author name & title.
+2) Web page has nice background color and consists mainly of one div with class "container".
+3) Container has h1 tag with id of "title".
+4) Another div nested inside of our container div with class of "form" for all the form related content.
+5) Simple label and an input type of "date" to allow choosing of dates inside our "form" div.
+6) A button element.
+7) A p tag for our "result".
+
+//* style.css
+Modern design styling:
+1) CSS universal selector reset.
+2) Linear gradient for the body.
+3) Flex box for the form elements div in a column orientation.
+4) Nice ease transition for button when on hover.
+
+//* script.js
+Functionality for button:
+1) First, bring in the button with getElementById. 
+2) Add "click" event listener that invokes a function "calculateAge" each time button is clicked.
+3) We create this function and inside the function we need to know what the input of the user in the form is, so we need to bring in the input with the id of "birthday" with getElementById.
+4) Create a variable inside the "calculateAge" function and assign the birthday value to it.
+5) Then we need to check what the user has input, if the field is empty and the user clicks the button, we need to alert him to input a value.
+6) Else if the field is not empty, we need to calculate the age in years based off the data input.
+7) For that we create a variable called "age" inside the "else" of the "if" statement and assign a function called "getAge" with the birthday value variable as a parameter.
+8) Then, create a new function "getAge(birthdayValue)" and inside this function we need to get the current date year and month.
+9) Create a variable inside this function called currentDate and assign it the "New Date();" method. This will get the "today" date.
+10) Create another variable called birthdayDate and assign it the "New Date(birthdayValue);" method. This will get the "birthday" input date.
+11) Create another local variable called "age" and this is the difference between the "currentDate.getFullYear()" and "birthdayDate.getFullYear()" methods.
+12) Do the same for the months.
+13) We need to make sure the age is correct concerning the months and decrement the age by 1 if the person has not yet had his birthday in the current year.
+14) We need to "return" the "age" variable.
+15) We need to bring in the "result" element in to the document.
+16) We go back to the "calculateAge" function and change the inner text of result to a dynamic text with backticks ` `.
+
